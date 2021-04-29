@@ -1,0 +1,395 @@
+<!-- 
+    Name: Aaron Dayrit
+    Course: EC-Software Developement 20S
+    Teacher: Scott Hardman
+    School: Pembina Trails Early College (PTEC)
+    Date Late Modified: April 29 2021 -Thursday 
+ -->
+ 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+    <!-- link to stylesheet of webpage -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+    <style>
+        /* changes the font type. 
+        (NOTE: had this in my stylesheet but not sure why it's not working on this page)
+        */
+        body {
+            font-family: century, Georgia, 'times new roman', sans-serif;
+
+        }
+
+        /* The first image shown on the website with the title inside.
+            States the size and sets as background and its properties */
+        #img1 {
+            margin-top: -40px;
+            background-image: url(Images/mainImage.jpg);
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 100%;
+            background-size: cover;
+            border-bottom: solid white 10px;
+
+        }
+
+        /*sets the background image and text color for intro section*/
+        #intro {
+            background-image: url(Images/backgroundImage.jpg);
+            background-size: cover;
+
+            color: white;
+            background-color: whitesmoke;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* properties for paragraph text of intro section */
+        #intro p {
+            font-size: 16px;
+            text-align: center;
+            height: 300px;
+            width: 600px;
+            margin: auto;
+        }
+
+        /* properties fo size and color of background for quote div that houses a quote */
+        #quote {
+            width: 100%;
+            height: 380px;
+            background-color: white;
+        }
+
+        /* heading2 properties for quote section */
+        #quote h2 {
+            color: red;
+            height: 20px;
+            width: 500px;
+            float: right;
+            text-align: right;
+            margin-top: 125px;
+            margin-right: 145px;
+        }
+
+        /* main quote section properties floated to right of papge */
+        #quote h4 {
+            float: right;
+            color: red;
+            margin-top: 30px;
+            margin-right: 145px;
+        }
+
+        /*Properties for the hover dots itself used to navigate through the page and the animation timing*/
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.35s ease, border-color 0.35s ease;
+            border: white solid 1px;
+        }
+
+        /*Properties for the container of hover dot buttons on the bottom of the page that cycles through the different pages*/
+        #dotsContainer {
+            margin-top: -100px;
+            margin-bottom: 80px;
+        }
+
+        /* Makes the border solid red for the dots when active and selective */
+        .active,
+        .dot:active {
+            border: solid red 1px;
+        }
+
+        /* Makes the border of dots solid red when hovering */
+        .dot:hover {
+            border: solid red 1px;
+
+        }
+
+        /* Class for fading animation used for fading slideshow photos*/
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 0.5s;
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+
+        /* Fading animation changeling the opacity of element (NOTATIONS) */
+        @-webkit-keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        @-ms-keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Fading animation changeling the opacity of element*/
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Properties for class "mySlides" used for the slideshow at the bottom of the page*/
+        .mySlides {
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: none;
+        }
+
+        /* Properties for paragraph text of class "mySlies"  */
+        .mySlides p {
+            color: white;
+            padding: 20px 24px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: auto;
+            text-align: center;
+            height: 150px;
+            width: 400px;
+        }
+
+        /* Properties for anchor tags of class "mySlies"  */
+        .mySlides a {
+            color: white;
+            padding: 18px 24px;
+            text-decoration: none;
+            font-size: 20px;
+            border: solid white 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar section of webpage. Creats an anchor and title for each page of website -->
+    <nav>
+        <div class="bar">
+            <a href="Rebuild.html" style="float: right; margin-right:45px;">REBUILD OF EVANAGELION</a>
+            <a href="EndOfEva.html">THE END OF EVANGELION</a>
+            <a href="Evangelion1.html">NEON GENESIS EVANGELION</a>
+            <a href="index.html">HOME</a>
+            <p
+                style="float: left; margin-left:45px; color: #be17d4; font-size: 18px; margin-top: 16px; margin-bottom: 15px;">
+                EVANGELION</p>
+        </div>
+    </nav>
+
+    <!-- Initial title section of website. Has the title text and image first shown -->
+    <main>
+        <div id="img1"></div>
+
+        <!-- Intro section with the fixed background image 
+            (NOTE: In this point in time I forgot that padding existed 
+            and I resorted to breaklines. I SWITCH TO USING PADDING THOUGH. I don't think it's in the requirements so it's all good) -->
+        <div id="intro">
+            <br><br><br><br><br><br>
+
+            <h3 style="text-align: center;"> EVANGELION</h3>
+
+            <!-- taken from:
+                https://www.reddit.com/r/japan/comments/2cwaye/how_did_neon_genesis_evangelion_have_a/
+
+                -Talks about the general impact left by the topic
+            -->
+            <p>Neon Genesis Evangelion was the vanguard for anime as an intellectually viable medium, for anime that
+                take their audiences serious with challenging themes and ideas, and for the wave of anime merchandising
+                that has been a staple of Japan for the last 20 years. These factors have left a lasting mark on both
+                Japanese pop culture and pop culture as a whole.</p>
+
+        </div>
+
+
+        <!-- Small section of page with a quote from Hideaki Anno (the original creator of this work) -->
+        <div id="quote">
+
+            <h2>"Evangelion is my life and I have put everything I know into this work.
+                This is my entire life. My life itself."</h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h4>Hideaki Anno</h4>
+
+        </div>
+
+
+        <!-- Slideshow section of webpage 
+           - summaries made by me that presents a small feeling of what people get from each subtopic -->
+
+        <!-- Slideshow section of the webpage. Creates Images to cycle through with a 
+                link for the matching webpage for the topic presented -->
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="background-image: url(Images/FC1.png)">
+
+                <!-- Creates a small paragraph -->
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>A mid-90s tv classic that revolutionized story-telling in the saturated giant robots era of western
+                    cartoons and Japanese anime. A roller-coaster following unheard-of topics at the time, such as
+                    depression and self-worth.
+                </p>
+
+                <!-- A link for the corresponding sub webpage -->
+                <p style="text-align: center;"> <a href="Evangelion1.html">MORE</a></p>
+            </div>
+
+
+            <!-- Slideshow section of the webpage. Creates Images to cycle through with a 
+                link for the matching webpage for the topic presented -->
+            <div class="mySlides fade" style="background-image: url(Images/FC2.png)">
+
+                <!-- Creates a small paragraph -->
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>A cinematic masterpiece displaying the climactic finale of the popular Japanese tv series. An
+                    astonishing work of film-making created by a man in his lowest points that presented a work of art
+                    that will be remembered forever.
+                </p>
+
+                <!-- A link for the corresponding sub webpage -->
+                <p style="text-align: center;"> <a href="EndOfEva.html">MORE</a></p>
+            </div>
+
+
+            <!-- Slideshow section of the webpage. Creates Images to cycle through with a 
+                link for the matching webpage for the topic presented -->
+            <div class="mySlides fade" style="background-image: url(Images/FC3.png)">
+
+                <!-- Creates a small paragraph -->
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>Rebuild is a retelling of the now-classic Japanese anime. Now split into four movies by its original
+                    creator, modernizing the old. Over a decade's worth of effort has resulted in the revitalization of
+                    the series.
+                </p>
+
+                <!-- A link for the corresponding sub webpage -->
+                <p style="text-align: center;"> <a href="Rebuild.html">MORE</a></p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Dot buttons used to change the current slide value to change the slide of slideshow -->
+        <div id="dotsContainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+
+
+
+
+    <!-- Bottom footer of webpage -->
+    <div id="footer">
+        <br><br>
+
+        <!-- title portion of footer -->
+        <h1 style="color: #9811AA; text-align: center;margin: auto; ;">EVANGELION</h1>
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+
+        <br>
+
+        <!-- image/link for facebook page of website -->
+        <p style="text-align: center; margin: 0%;"><a href="https://www.facebook.com/EvangelionMovie/">
+                <img src="Images/facabook.png">
+
+            </a>
+
+            <!-- image/link for twitter page of website -->
+            <a href="https://twitter.com/evangelion_co">
+                <img src="Images/twitter.png">
+            </a>
+
+            <!-- image/link for instagram page of website -->
+            <a href="https://www.instagram.com/evangelion.official/?hl=en">
+                <img src="Images/instagram.png">
+            </a>
+
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+        </p>
+    </div>
+
+    <!-- bottom section of foot with copyright statement and designer -->
+    <div id="bottomFooter">
+        <p style="opacity: 0.1; text-align: center; color: white; margin-top: 10px; font-size: 14px;">
+            COPYRIGHT <span style=" font-style: italic; ">@PTEC</span> 2021. DESIGN BY AARON DAYRIT
+        </p>
+    </div>
+    </div>
+
+
+    <!-- Java script portion to make the slideshow imputs function
+        (NOTE: I'm not a hundred percent sure about how exactly it works and I believe 
+        explaining anything about how it functions would be false)
+
+        taken from: (w3schools.com/howto/howto_js_slideshow.asp)
+    -->
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+</body>
+
+</html>

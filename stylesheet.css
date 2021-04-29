@@ -1,0 +1,117 @@
+/* visual properties for main body section of all webpages */
+html,body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    font-family: century Georgia, 'Times New Roman', serif;
+
+    animation: fadeIn 0.5s forwards;
+}
+
+/* animation/transition for fading in opacity for some elements */
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+/* animation/transition for fading in opacity for some elements (webkit) */    
+@-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+@-moz-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+@-ms-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+/* navigation bar section of the webpages */
+.bar {
+    overflow: hidden;
+    background-color: #0D0D0D;
+    border-bottom: 10px solid #C1A976;
+}
+
+/* properties for navigation bar anchors floating to the right */
+.bar a {
+    float: right;
+    color: white;
+    padding: 16px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 1px;
+    border: solid #0D0D0D 1px;
+}
+
+/* nav tag properties to fix the bar into place and setting z index to be over any element */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* transition timing for the border and color of a tags in website */
+ a{
+    transition: border 0.35s, color 0.35s;
+}
+
+/* changes color and border of a tag for MAIN and NAV when hovering */
+    main a:hover, nav a:hover{
+    color: red;
+    border: solid red 1px;
+}
+
+/* undelines the link presented in the page when tabing through */
+nav a:focus{
+    text-decoration: underline;
+}
+
+/* properties for main footer section located at the very bottom of the site */
+#footer {
+    width: 100%;
+    height: 220px;
+    background-color: #0D0D0D;   
+    border-top: solid #C1A976 10px;
+}
+/* sizing for copyright sectoin of website at the very very bottom of footer */
+#bottomFooter{
+    height: 12px;
+    width: 100%;
+    border-bottom: black solid 15px;
+}
+
+/* Sets the sizing and margin for the image links of the footer */
+#footer img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+/* makes the physical text links the same color as background */
+#footer a{
+    color: #0D0D0D;
+}

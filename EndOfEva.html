@@ -1,0 +1,299 @@
+<!-- NOTE:
+    I forgot the !DOCTYPE HTML tag up here and I found out right before I was about to submit. 
+    Applying it to the pages that didn't have it completely destroyed my layout. What can I say 
+    it's not in the REQUIREMENTS though.
+-->
+
+<html>
+<head>
+    <title>End Of Evangelion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+    <!-- link to stylesheet of webpage -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        /* properties for the initial title image seen on screen with text of title */
+        #titleImg {
+            background-image: url(Images/endBackground.png);
+            width: 100%;
+            height: 660px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: solid white 12px;
+        }
+
+        /* first content properties (dark background with image on the side and a title to the left)*/
+        #Content1 {
+            background-image: url(Images/Finale.png);
+            width: 100%;
+            height: 530px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -20px;
+        
+        }
+
+        /* first content's paragraph sizing and placement */
+        #Content1 p {
+            color: white;
+            width: 380px;
+            height: 250px;
+            text-align: center;
+            margin-left: 130px;
+            padding-top: 170px;
+            font-size: 17px;
+        }
+
+        /*Second content of page with the static background (black with graphic in the background)  */
+        #Content2 {
+            background-color: black;
+            width: 100%;
+            height: 420px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(Images/third\ impact.png);
+            background-attachment: fixed;
+        }
+
+        /* second content's paragraph sizing and placement */
+        #Content2 p {
+            color: white;
+            width: 320px;
+            height: 200px;
+            text-align: center;
+            float: right;
+            margin-right: 150px;
+            margin-top: 150px;
+        }
+
+        /*Third content of page (movie scene near water with army vehicles)  */
+        #Content3 {
+            background-image: url(Images/tanks.png);
+            width: 100%;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* third content's paragraph sizing and placement */
+        #Content3 p {
+            width: 550px;
+            height: 250px;
+            margin: auto;
+            padding-top: 155px;
+            color: white;
+            text-align: center;
+            font-size: 19px;
+        }
+
+        /*fourth content of page (and and off sail colored background with red gross graphic)  */
+        #Content4 {
+            background-color: black;
+            width: 100%;
+            height: 615px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* creates a sail colored div inside the black background of the fourth content section */
+        #Content4 div {
+            background-color: #fff8de;
+            height: 100%;
+            width: 40%;
+            margin-top: -15px;
+        }
+
+        /* red cross image placed inside the fourth content section */
+        #content4 img {
+            height: 615px;
+            width: 758px;
+            float: right;
+
+        }
+
+        /* fixed text splash image (placed higher in the page above the army image) */
+        #Content5 {
+            background-image: url(Images/textSpash.png);
+            width: 100%;
+            height: 470px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* netflix advertisement section sizing and background */
+        #netflix {
+            background-image: url(Images/cover1.jpg);
+            width: 100%;
+            height: 900px;
+        }
+
+        /* sizin and palcement of iframe video with animation */
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid black 1px;
+            width: 900px;
+            height: 500px;
+
+            transition: 0.35s;
+        }
+
+        /* Creates a red border around the Iframe video when hovering */
+        iframe:hover {
+            border: red solid 1px
+        }
+
+        /* Link anchor properties inside the netflix section*/
+        #netflix a {
+            color: white;
+            padding: 20px 24px;
+            text-decoration: none;
+            font-size: 23px;
+            border: solid white 1px;
+
+            transition: border 0.35s, color 0.35s;
+        }
+
+        /* Changes border color and font color of "watch now" when hovering over */
+        #netflix a:hover {
+            border: red solid 1px;
+            color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navigation bar section of webpage. Creats an anchor and title for each page of website -->
+    <nav>
+        <div class="bar">
+
+            <a href="Rebuild.html" style="float: right; margin-right:45px;">REBUILD OF EVANAGELION</a>
+            <a href="EndOfEva.html">THE END OF EVANGELION</a>
+            <a href="Evangelion1.html">NEON GENESIS EVANGELION</a>
+            <a href="index.html">HOME</a>
+            <p
+                style="float: left; margin-left:45px; color: #be17d4; font-size: 18px; margin-top: 16px; margin-bottom: 15px;">
+                EVANGELION</p>
+        </div>
+    </nav>
+
+    <main>
+        <!--Places the initial title screen of page with text in image  -->
+        <div id="titleImg"></div>
+
+        <!-- first content and pagraph section (Darkened scene with image to the right with a title the first appears) -->
+        <div id="content1">
+            <!-- General information about the film 
+                Source:(https://myanimelist.net/anime/32/Neon_Genesis_Evangelion__The_End_of_Evangelion) -slightly edited
+            -->
+            <p>The End of Evangelion serves as an alternate ending to the polarizing final episodes of Neon Genesis
+                Evangelion. The film covers the same events that transpired but from a more conventional perspective.
+                With the fate of the universe hanging in the balance, the climactic final battle draws near. Still to
+                this day continues to have an impact on film-making. </p>
+        </div>
+
+        <!-- Second content of static background (black with graphic)-->
+        <div id="content2">
+            <p>Compared to a conventional movie, End of Evangelion is more akin to art itself. Whether it's because of
+                its presentation, production, or themes, it is truly mesmerizing. A work of art unlike anything seen
+                before and after its time.
+            </p>
+        </div>
+
+        <!-- static background text splash used to create some breathign room -->
+        <div id="content5"> </div>
+
+        <!-- Third content section (army scene near the water) -->
+        <div id="content3">
+            <!-- Some information about the creation of the film
+                Source: (https://wiki.evageeks.org/The_End_of_Evangelion)
+            -->
+            <p>It is a commonly held belief that Hideaki Anno created End of Evangelion as a form of revenge against
+                Evangelion fans unhappy with the existing ending to the TV series. In reality, the End of Evangelion is
+                closer to the original concept for the series ending, which was changed due to budget and censorship
+                issues. </p>
+        </div>
+
+
+        <!-- -Black and off white(sail) design section with red cross graphic on the side 
+            -Places the text corresponding to the section segmented in the design
+        -->
+        <div id="content4">
+            <p style="margin:0; font-size: 80px;color: white; padding-right: 130px; position: absolute; 
+            padding-top: 45px; padding-left: 620px;">(NOT)</p>
+
+            <p style="margin:0; font-size: 20px;color: white; padding-right: 130px; position: absolute; 
+            padding-top: 450px; padding-left: 705px;">alone</p>
+            <img src="Images/cross.png">
+            <div>
+                <p style="margin:0; font-size: 110px; width: 100px; text-align: center; padding-left: 130px; 
+                padding-top: 160px;">YOU ARE</p>
+
+            </div>
+        </div>
+
+        <!-- Netflix advertisement section of movie -->
+        <div id="netflix">
+            
+            <!-- Iframe linking to an old movie trailer -->
+            <br><br><br><br><br><br>
+            <iframe src="https://www.youtube.com/embed/IQrXRBh94IA">
+            </iframe>
+
+            <h2 style="text-align: center; margin-top: 40px; margin-bottom: 0; color: white;">FULL MOVIE NOW ON
+                NETFLIX</h1>
+                <h5 style="color: white; text-align: center;margin-top: 10px;">
+                    _____________________________________________</h5>
+
+                <!-- anchor link to the netflix page for movie -->
+                <p style="text-align:center; margin-top: 45px;"> <a
+                        href="https://www.netflix.com/ca/title/60024788">WATCH NOW</a></p>
+        </div>
+    </main>
+
+    <!-- Bottom footer of webpage -->
+    <div id="footer">
+        <br><br>
+
+        <!-- title portion of footer -->
+        <h1 style="color: #9811AA; text-align: center;margin: auto; ;">EVANGELION</h1>
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+
+        <br>
+
+        <!-- image/link for facebook page of website -->
+        <p style="text-align: center; margin: 0%;"><a href="https://www.facebook.com/EvangelionMovie/">
+                <img src="Images/facabook.png">
+
+            </a>
+
+            <!-- image/link for twitter page of website -->
+            <a href="https://twitter.com/evangelion_co">
+                <img src="Images/twitter.png">
+            </a>
+
+            <!-- image/link for instagram page of website -->
+            <a href="https://www.instagram.com/evangelion.official/?hl=en">
+                <img src="Images/instagram.png">
+            </a>
+
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+        </p>
+    </div>
+
+    <!-- bottom section of foot with copyright statement and designer -->
+    <div id="bottomFooter">
+        <p style="opacity: 0.1; text-align: center; color: white; margin-top: 10px; font-size: 14px;">
+            COPYRIGHT <span style=" font-style: italic; ">@PTEC</span> 2021. DESIGN BY AARON DAYRIT
+        </p>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+   <!-- link to stylesheet of webpage -->
+   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+
+        /* the first and only content of page and the sizing of it */
+        #content1{
+            width: 100%;
+            height: 650px;
+            margin-top: 58px;
+        }
+
+        /* the main div section that is the background of the page with animation change */
+        #content1 div{
+            background-image: url(Images/error.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: flash;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* properties/positioning for text png of title and message */
+        #content1 img{
+            width: 100%;
+            height: 350px;  
+            position: absolute;     
+            z-index: +1; 
+            padding-top: 147px;
+
+        }
+
+        /* animation changing the image background for the orange graphic (NOTATIONS) */
+        @-webkit-keyframes flash{
+            from{background-image: url(Images/error.png);}
+            to{background-image: url(Images/black.png);}
+        }
+        @-moz-keyframes flash{
+            from{background-image: url(Images/error.png);}
+            to{background-image: url(Images/black.png);}
+        }
+        @-ms-keyframes flash{
+            from{background-image: url(Images/error.png);}
+            to{background-image: url(Images/black.png);}
+        }
+        /* animation changing the image background for the orange graphic */
+        @keyframes flash{
+            from{background-image: url(Images/error.png);}
+            to{background-image: url(Images/black.png);}
+        }
+
+    </style>
+</head>
+
+<body>
+  <!-- Navigation bar section of webpage. Creats an anchor and title for each page of website -->
+  <nav>
+    <div class="bar">
+        <a href="Rebuild.html" style="float: right; margin-right:45px;">REBUILD OF EVANAGELION</a>
+        <a href="EndOfEva.html">THE END OF EVANGELION</a>
+        <a href="Evangelion1.html">NEON GENESIS EVANGELION</a>
+        <a href="index.html">HOME</a>
+        <p
+            style="float: left; margin-left:45px; color: #be17d4; font-size: 18px; margin-top: 16px; margin-bottom: 15px;">
+            EVANGELION</p>
+    </div>
+</nav>
+
+
+<main>
+    <!-- Displays the logo and comming soon text for page -->
+    <div id="content1">
+        <img src="Images/evaTitle.png">
+
+        <!-- the animated background piece of section -->
+        <div></div>
+    </div>
+</main>
+  
+    <!-- Bottom footer of webpage -->
+    <div id="footer">
+        <br><br>
+
+        <!-- title portion of footer -->
+        <h1 style="color: #9811AA; text-align: center;margin: auto; ;">EVANGELION</h1>
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+
+        <br>
+
+        <!-- image/link for facebook page of website -->
+        <p style="text-align: center; margin: 0%;"><a href="https://www.facebook.com/EvangelionMovie/">
+                <img src="Images/facabook.png">
+
+            </a>
+
+            <!-- image/link for twitter page of website -->
+            <a href="https://twitter.com/evangelion_co">
+                <img src="Images/twitter.png">
+            </a>
+
+            <!-- image/link for instagram page of website -->
+            <a href="https://www.instagram.com/evangelion.official/?hl=en">
+                <img src="Images/instagram.png">
+            </a>
+
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+        </p>
+    </div>
+
+    <!-- bottom section of foot with copyright statement and designer -->
+    <div id="bottomFooter">
+        <p style="opacity: 0.1; text-align: center; color: white; margin-top: 10px; font-size: 14px;">
+            COPYRIGHT <span style=" font-style: italic; ">@PTEC</span> 2021. DESIGN BY AARON DAYRIT
+        </p>
+    </div>
+</div>
+</body>
+
+</html>

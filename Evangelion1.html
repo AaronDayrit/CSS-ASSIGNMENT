@@ -1,0 +1,306 @@
+<!-- NOTE:
+    I forgot the !DOCTYPE HTML tag up here and I found out right before I was about to submit. 
+    Applying it to the pages that didn't have it completely destroyed my layout. What can I say 
+    it's not in the REQUIREMENTS though.
+-->
+
+<html>
+
+<head>
+    <title>Evangelion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+    <!-- link to stylesheet of webpage -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        /* properties for the initial title image seen on screen with text of title */
+        #title {
+            background-image: url(Images/background1.jpg);
+            width: 100%;
+            height: 660px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: white solid 10px;
+        }
+
+        /* general pagraph properties */
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* first content properties (Graphical section with black background)*/
+        #content1 {
+            width: 100%;
+            height: 500px;
+            background-image: url(Images/background2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* first content's paragraph properties */
+        #content1 p {
+            width: 420px;
+            height: 200px;
+            color: white;
+            float: right;
+            margin-right: 100px;
+            font-size: 17px;
+            background-color: black;
+        }
+
+        /*Second content of page with the static background (forest point of view)  */
+        #content2 {
+            background-image: url(Images/forest.png);
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* Second content's paragraph properties */
+        #content2 p {
+            text-align: center;
+            width: 550px;
+            height: 100px;
+            font-size: 20px;
+            color: white;
+            margin: auto;
+
+        }
+
+
+        /*Third section of page, large in size with a quote and graphic japanese kanji(text)*/
+        #quote {
+            width: 100%;
+            height: 1300px;
+            background-image: url(Images/unit03.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* third content's placement properties and text sizing*/
+        #quoteSection {
+            width: 820px;
+            height: 100px;
+            margin-left: 13%;
+            padding-top: 5%;
+            font-size: 40px;
+            text-align: left;
+        }
+
+        /* smaller heading properties that specifies the originator of quote in the section */
+        #quote h2 {
+            float: right;
+            color: white;
+            margin-right: 100px;
+            padding-top: 30px;
+        }
+
+        /* Fourth content of page (section for series derector of the series) */
+        #content4 {
+            width: 100%;
+            height: 520px;
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* paragraph properties of fourth page */
+        #content4 p {
+            width: 420px;
+            height: 400px;
+            color: black;
+            float: left;
+            margin-top: 160px;
+            margin-left: 140px;
+            font-size: 17px;
+        }
+
+        /* fifth section properties used for spacing */
+        #content5 {
+            background-image: url(Images/mirror.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 490px;
+        }
+
+        /* sizing of netflix iframe section of page with a repeating background */
+        #netflix {
+            background-image: url(Images/cover1.jpg);
+            width: 100%;
+            height: 900px;
+        }
+
+        /* placement of iframe with the sixing and transition timing */
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid black 1px;
+            width: 900px;
+            height: 500px;
+
+            transition: 0.35s;
+        }
+
+        /* border change for iframe when hovering */
+        iframe:hover {
+            border: red solid 1px;
+
+        }
+
+        /* anchor/link for netflix link properties and animation of netflix section */
+        #netflix a {
+            color: white;
+            padding: 20px 24px;
+            text-decoration: none;
+            font-size: 23px;
+            border: solid white 1px;
+
+            transition: border 0.35s, color 0.35s;
+        }
+
+        /* changes text color and border of link when hovering */
+        #netflix a:hover {
+            border: red solid 1px;
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Navigation bar section of webpage. Creats an anchor and title for each page of website -->
+    <nav>
+        <div class="bar">
+            <a href="Rebuild.html" style="float: right; margin-right:45px;">REBUILD OF EVANAGELION</a>
+            <a href="EndOfEva.html">THE END OF EVANGELION</a>
+            <a href="Evangelion1.html">NEON GENESIS EVANGELION</a>
+            <a href="index.html">HOME</a>
+            <p
+                style="float: left; margin-left:45px; color: #be17d4; font-size: 18px; margin-top: 16px; margin-bottom: 15px;">
+                EVANGELION</p>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <!-- NOTE:
+                ALL INFORMATION FROM: (https://myanimelist.net/anime/30/Neon_Genesis_Evangelion)
+        -->
+
+        <!--Places the initial title screen of page with text in image  -->
+        <div id="Title"></div>
+
+        <!-- first content and pagraph section (GRAPHIC) -->
+        <div id="content1">
+            <br><br><br><br><br><br><br><br>
+
+            <!-- paragraph about a brief explaination of the plot -->
+            <p>In the year 2015, the world stands on the brink of destruction. Humanity's last hope lies in the hands of
+                Nerv, a special agency under the United Nations, and their Evangelions, giant machines capable of
+                defeating the Angels who herald Earth's ruin. Gendou Ikari, head of the organization, seeks compatible
+                pilots who can synchronize with the Evangelions and realize their true potential. </p>
+        </div>
+
+        <!-- Second content of static background -->
+        <div id="content2">
+            <br><br><br><br><br><br><br><br><br>
+            <!-- paragraph diving deeper on the explaination of the plot -->
+            <p>Face to face with his father for the first time in years, 14-year-old Shinji Ikari's average life is
+                irreversibly changed when he is whisked away into the depths of Nerv, and into a harrowing new
+                destiny—he must become the pilot of Evangelion Unit-01 with the fate of mankind on his shoulders.</p>
+        </div>
+
+        <!-- Large quote section in black for a break of null space -->
+        <div id="quote" style="color: white;">
+            <p id="quoteSection">"Burying memories is a man's way of surviving. But there are some
+                things a man should never forget."</p>
+
+            <!-- originator of quote placed on the side -->
+            <h2>-Gendo Ikari</h2>
+        </div>
+
+
+        <!-- Fourth content piece -->
+        <div id="content4">
+            <img src="Images/anno.jpg" style="width: 600px; height: 100%; float: right;">
+
+            <!-- paragraph explaining background informtion about production and the original director/writter of the story -->
+            <p>Director Hideaki Anno's depression is what led to the dark themes of Neon Genesis Evangelion. Budgetary
+                problems and parental complaints about content led to the original ending being scrapped and replaced
+                with an extremely limited-animation ending breaking from the main plot. The series' mix of
+                psychoanalysis, religious symbolism, and genre deconstruction
+                proved extremely influential on mature anime in the late '90s onward. The Japan Media Arts Festival in
+                2006 ranked it as the most popular anime of all time. </p>
+        </div>
+
+        <!-- image for a break of space -->
+        <div id="content5"></div>
+
+        <!-- Netflix scetion for advertisement trailer and links -->
+        <div id="netflix">
+            <br><br><br><br><br><br>
+
+            <!-- creates an iframe with a youtube video embedded with a trailer of the series -->
+            <iframe src="https://www.youtube.com/embed/13nSISwxrY4">
+            </iframe>
+
+            <!-- Message for availability of series on netflix -->
+            <h2 style="text-align: center; margin-top: 40px; margin-bottom: 0; color: white;">FULL TV SERIES NOW ON
+                NETFLIX</h1>
+                <h5 style="color: white; text-align: center;margin-top: 10px;">
+                    _____________________________________________</h5>
+
+                <!-- link to watch the series that leads to netflix -->
+                <p style="text-align:center; margin-top: 45px;"> <a
+                        href="https://www.netflix.com/ca/title/81033445">WATCH NOW</a></p>
+        </div>
+    </main>
+
+    <!-- Bottom footer of webpage -->
+    <div id="footer">
+        <br><br>
+
+        <!-- title portion of footer -->
+        <h1 style="color: #9811AA; text-align: center;margin: auto; ;">EVANGELION</h1>
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+
+        <br>
+
+        <!-- image/link for facebook page of website -->
+        <p style="text-align: center; margin: 0%;"><a href="https://www.facebook.com/EvangelionMovie/">
+                <img src="Images/facabook.png">
+
+            </a>
+
+            <!-- image/link for twitter page of website -->
+            <a href="https://twitter.com/evangelion_co">
+                <img src="Images/twitter.png">
+            </a>
+
+            <!-- image/link for instagram page of website -->
+            <a href="https://www.instagram.com/evangelion.official/?hl=en">
+                <img src="Images/instagram.png">
+            </a>
+
+        <h4 style="color: #9811AA; text-align: center;margin: auto; ;">____________________________________</h4>
+        </p>
+    </div>
+
+    <!-- bottom section of foot with copyright statement and designer -->
+    <div id="bottomFooter">
+        <p style="opacity: 0.1; text-align: center; color: white; margin-top: 10px; font-size: 14px;">
+            COPYRIGHT <span style=" font-style: italic; ">@PTEC</span> 2021. DESIGN BY AARON DAYRIT
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>
